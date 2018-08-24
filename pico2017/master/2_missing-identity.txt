@@ -1,0 +1,4 @@
+We get a corrupted file.
+Trying to fix the file with `zip -FF <file> --out New.zip` gives us a working zip, without the `flag.png` file we could see in the raw file.
+Partially recreating zip header with one copied from a working zip file, allows us to `binwalk` the `flag.png` out of there.
+Then we just need to read the flag from the image.
