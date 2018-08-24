@@ -1,0 +1,3 @@
+So this one is basic terminal commands. You're given a folder, with more folders inside and have to search for the flag. For now it's small enough to check by hand which you can do, or you can be smart.
+
+First do find ./* to list all the stuff in the trunk folder and see what you're working with, and then do find ./* | grep flag to search only for results that have flag in them. You're given the directory, and now you can just cat the file!
