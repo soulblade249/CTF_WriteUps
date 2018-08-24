@@ -1,0 +1,3 @@
+So this one wants you to use netcat to connect to a server.
+This is pretty simple, just use the nc command followed by shell2017.picoctf.com followed by the port number which is 24369
+
