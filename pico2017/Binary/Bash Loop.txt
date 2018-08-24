@@ -1,0 +1,8 @@
+Ok so in the file you have the flag and the program bashloop which reads the flag. Running bashloop shows that you need to guess the correct number. we're going to set up a loop to do this.
+
+Doing this: 
+
+for i in {0..4096}; do ./bashloop $i; done
+
+Give you the Nope thing 4096, so you need to grep it with -v Nope to only get the flag
+
