@@ -1,0 +1,5 @@
+Ok so running this program prints a hex string that you were suppose to write in plane text ascii, but issue is some of the characters aren't typeable. So you need to convert the hex with python and put it into the program
+
+python -c "print '1a558acddabd64bbccdd94903eafdf18.decode('hex')'"
+
+
