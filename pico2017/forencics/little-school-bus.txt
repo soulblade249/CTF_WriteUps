@@ -1,0 +1,4 @@
+Little School Bus -> LSB
+Stegsolve shows data in all 3 color LSB layers on the last row of the image
+For some weird reason, the byte order of the colors should be used reversed, so BGR instead or RGB
+Data extraction with a short script gives us the solution
