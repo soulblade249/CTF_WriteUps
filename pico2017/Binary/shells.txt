@@ -1,0 +1,3 @@
+This time, we only have room for 10 bytes of shellcode, but we can use the `win` function provided.
+So we get the address of that function with `nm`.
+Then the shellcode is only six bytes: the assembled instruction `push 0x<address>` and `ret`
