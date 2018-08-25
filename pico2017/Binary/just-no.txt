@@ -1,0 +1,1 @@
+Because the source indicates that the executable is using a relative path, we can execute it from a directory tree in the home directory, such that the relative path reaches an `auth` file under our control, that doesn't contain no.
