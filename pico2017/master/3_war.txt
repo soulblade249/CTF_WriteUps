@@ -1,0 +1,6 @@
+Looking at the source code, basic logic errors such as negative bets are easily seen to be useless.
+Expecting a buffer overflow we start looking at the input reading. The first thing to notice is that the reading itself is secured against overflows by limiting the number of characters that can be read. We see, however, that the final '\0' on the buffer is written out of bounds if the maximum number of chars is read.
+Exploiting this overflow allows us to write 0 to `gameData.deckSize`, which in turns makes the game run longer because the end check is solely on `gameData.deckSize == 0` instead of `<= 0`.
+When we start betting by 1 to keep betting as long as possible, we notice that the pointers into the player decks go out of bounds as well. The player pointer goes into the player name buffer, while the opponent pointer remains in a zeroed out area.
+Here the validity check on the cards comes into play. By choosing an appropriate name, we can make sure we have valid cards. Once this starts happening, it's only a matter of betting the maximum until we exceed 500. Then you can simply cat the `flag.txt`.
+`(python -c 'print("\x04"*31 + "\n1" * 52)' && cat -) | ./war`
