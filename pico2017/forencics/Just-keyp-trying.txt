@@ -1,0 +1,1 @@
+So download the pcap and open in wireshar. It's USB input which you can decode by going into the pdf and looking for the list of keyboard inputs. Match the changes in the packet to the table of hex characters to get the key.
