@@ -1,0 +1,1 @@
+Because PRNG with a given seed is predictable, just change the + to a - for the random rotation
