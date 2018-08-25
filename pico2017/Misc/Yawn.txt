@@ -1,0 +1,1 @@
+All you need to do for this one is strings -n 1 and it will lower the minimum string size to 1, and you can see strings of size 3 that says the flag
