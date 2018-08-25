@@ -1,0 +1,1 @@
+Most basic sql injection: `' OR '1'='1`
