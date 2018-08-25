@@ -1,0 +1,2 @@
+Because of the working of the signing algorithm, the signature for the product of multiple messages is the (modular) product of the signatures of the multiplied messages. By collecting as many primes and their signatures as we can within time, we can try to reconstruct the challenge signature from the prime factorization.
+It may take a few tries with the script before it's successful
