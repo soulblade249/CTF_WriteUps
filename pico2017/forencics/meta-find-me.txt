@@ -1,0 +1,2 @@
+`exiftool` to the rescue
+Get the flag format from the comment, then get the location
