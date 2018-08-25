@@ -1,0 +1,4 @@
+Wireshark tells us we're looking at USB data
+We can extract the actual data we're looking at with `tshark -r data.pcap -T fields -e usb.capdata | grep -E "^.{23}$" | grep -v 00:00:00:00:00:00:00:00 > data.txt`
+Then a python script to get the ascii from that data, based on the pdf linked in the hints.
+
