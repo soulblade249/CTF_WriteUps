@@ -1,0 +1,4 @@
+1: Binary to ascii
+2: ascii -> hex -> decimal (or shortcut because the text is from the previous binary: binary -> decimal)
+3: simple hash function modulo 16. Simply search for a single printable character that has that modulo
+4: reverse md5
