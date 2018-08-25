@@ -1,0 +1,1 @@
+Search through the capture to find a HTTP request that is not sent from Wget, look at the user agent header.
