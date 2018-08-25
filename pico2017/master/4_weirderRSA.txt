@@ -1,0 +1,14 @@
+We're given a partial RSA key: n, e, dp; and a ciphertext c
+
+dp = d  (mod p - 1)
+e*d = 1 (mod (p-1)(q-1))
+=> e*d + k(p-1)(q-1) = 1
+=> e*(dp + j(p-1)) + k(p-1)(q-1) = 1
+=> e*dp = 1 (mod p - 1)
+
+a^(e*dp) - a = 0 (mod p)      [Fermat's little theorem]
+Thus 2^(e*dp) - 2 is a multiple of p, but this is far too big
+But 2^(e*dp) - 2 = 2^(e*dp) - 2 + k*p*q (mod p), from which follows that this result does not change when working mod n (= mod p*q)
+This we can find a multiple k*p for some k, from (2^(e*dp) - 2) mod n
+Then by finding the gcd(k*p, n), we can find p, dividing it out of n results in q
+Now it's only a matter of decrypting the RSA with a complete private key
