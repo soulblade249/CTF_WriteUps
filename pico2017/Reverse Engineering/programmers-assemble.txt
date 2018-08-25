@@ -1,0 +1,1 @@
+Reading and deciphering the assembly, we see that ebx becomes the product of ecx and eax. Divide the wanted result by ecx and put it in hex.
