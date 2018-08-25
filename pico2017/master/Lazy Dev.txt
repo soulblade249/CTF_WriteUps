@@ -1,2 +1,3 @@
 This is a cilent side js exploit. All you need to do is fire up burp, intercept the packet and set it to true instead of false
 
+Alternatively, you can change function validate(pword) in client.js in the source to return true instead of false using inspect elements.
