@@ -1,0 +1,2 @@
+Enigma machine, everything needed given.
+Use http://enigma.louisedade.co.uk/enigma.html to decrypt
