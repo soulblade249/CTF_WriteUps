@@ -3,3 +3,6 @@ I used the command `cut -d ":" -f 2 <<< "$(./raw2hex)" | od -An -t x1` to get th
 It then gets the hex representation of the characters with `od -An -t x1`.
 All that I needed to do was to remove the spaces and the final "0A" byte since that was a new line character from the output.
 This can be shortened down to `cut -d ":" -f 2 <<< "$(./raw2hex)" | od -An -t x1 | tr -d '[:space:]' | sed "s/..$//g"`, but it looks really ugly and I'm sure there's a better way of writing it.
+
+Alternatively: 
+`./raw2hex | cut -d':' -f 2 | python -c 'print(__import__("binascii").hexlify(raw_input().strip()))'`
