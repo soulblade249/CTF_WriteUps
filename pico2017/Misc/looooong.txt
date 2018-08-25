@@ -1,0 +1,2 @@
+Separate window with python ready makes this easy enough
+`print("l" * 123 + "0")`
