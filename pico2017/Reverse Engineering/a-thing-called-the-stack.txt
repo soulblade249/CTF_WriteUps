@@ -1,0 +1,1 @@
+Read the assembly code and analyse what influences the stack. Don't forget that the stack grows to lower memory, so subtracting from esp makes it grow.
