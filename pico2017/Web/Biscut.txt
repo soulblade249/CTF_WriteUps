@@ -1,0 +1,8 @@
+This is a sql problem. Looking at the source, we see that they have the sql file cookies.sqlite and a private folder. Download the file at /private/cookies.sqlite.
+
+Next look at the file and open it with sqlite3
+
+So SELECT * FROM sql_master WHERE type = 'table';
+This give you the tables
+then do SELECT * FROM moz_cookies; and you get the local host cookie. Now edit your cookie to match the id and you're set
+
