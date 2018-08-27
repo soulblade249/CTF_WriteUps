@@ -1,0 +1,2 @@
+Opening the database reveals a bunch of MAC addresses, SSIDs, coordinates, and other things. 
+Plotting the coordinates onto a map using a site like http://www.gpsvisualizer.com/map_input reveals the flag.
