@@ -1,1 +1,7 @@
-Because PRNG with a given seed is predictable, just change the + to a - for the random rotation
+Because PRNG with a given seed is predictable, just change the
+"random.randrange(0,26)" to "+26-random.randrange(0,26)"
+and
+"random.randrange(0,10)" to "+10-random.randrange(0,10)"
+for the random notation.
+
+Make sure to use Python2 as Python3's random module will not work with the puzzle!
