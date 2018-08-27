@@ -1,0 +1,4 @@
+hashdump.txt has a bunch of usernames and passwords, but they're not the passwords exactly. 
+The title hints what it is and the 32 character length of the passwords hints to it being MD5 hashed.
+Cracking any one of the passwords with a website like https://hashkiller.co.uk/md5-decrypter.aspx reveals the plaintext.
+nc into shell2017.picoctf.com with the port indicated, login with the corresponding username and plaintext decrypted from the MD5, say yes, and then copy the flag within the database.
