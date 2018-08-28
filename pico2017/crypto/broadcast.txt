@@ -1,0 +1,19 @@
+Looking at the file, it looks like RSA. The title hints to use Hastad's Broadcast attack on it.
+I used the tool https://github.com/JulesDT/RSA-Hastad
+with the bash script below:
+
+```
+echo -e "\n## Creating public modulus and cipher files\n"
+echo <n0> > n0
+echo <n1> > n1
+echo <n2> > n2
+echo <c0> > c0
+echo <c1> > c1
+echo <c2> > c2
+
+echo -e "\n## Running the python script"
+echo "python rsaHastad.py n0 n1 n2 c0 c1 c2"
+python rsaHastad.py n0 n1 n2 c0 c1 c2
+
+rm n0 n1 n2 c0 c1 c2
+```
