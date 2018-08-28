@@ -1,0 +1,4 @@
+Looking through the HTTP protocol packets in the pcap, we see that 4 packets are GET requests to the directory /secret/, which stands out.
+Grabbing the four images the requests are for using follow TCP stream, we see that each picture is a corner of a larger image. Creating the larger image reveals the flag.
+
+The 1s and 7s are confusing. The way I distinguished them was that the bold looking 7s/1s were 1s and the slim, less fat 7s/1s were 7s.
